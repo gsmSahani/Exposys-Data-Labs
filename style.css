@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+}
+body{
+   background-image: url(./bg2.jpg);
+   filter: blur(10%);
+   
+}
+.container h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    /* background-color: rgb(231, 235, 238); */
+}
+.file span{
+    font-size: larger;
+    padding: 10px;
+    /* margin: 5px; */
+    font-weight: bolder;
+}
+.file p{
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.file{
+    margin: 200px;
+    padding-top: 50px;
+    display: inline;
+    float: left;
+}
+
+.mail-info{
+    float: right;
+    margin: 50px 150px 0px 10px;
+    border: 2px solid black;
+    box-shadow: inset 0 0 10px #000000;
+    border-radius: 8px;
+}
+form{
+    align-items: center;
+    text-align: center;
+    margin: 35px;
+}
+.mail-info h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form h2{ 
+    padding: 50px 20px 10px 0px;
+    margin-left: 15px;
+    align-items: center;
+    text-align: center;
+}
+input{
+    padding: 10px;
+    margin:5px;
+    width: 80%;
+}
+textarea{
+    margin:5px;
+    width: 80%;
+    padding: 10px;
+}
+form button{
+    width: 125px;
+    margin-left: 15px;
+    /* margin-right: auto; */
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+}
+button:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.tables{
+    position: relative;
+    top: 0;
+    margin-top: 650px;
+}
+.valTab{
+    float: left;
+    padding-left: 150px;
+}
+.invalTab{
+    float: right;
+    padding-right: 250px;
+}
+
+.file input[type="file"]{
+    border: 2px solid rgb(8, 8, 8);
+    background-color: rgb(98, 165, 241);
+    color: white;
+    border-radius: 5px;
+
+}
+.file input::file-selector-button{
+    border-radius: 50px;
+}

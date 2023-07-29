@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Mail Dispatcher</title>
+    <link rel="stylesheet" href="/style.css">  
+    <link rel="stylesheet" href="./main.js">  
+</head>
+<body>
+   <div class="container">
+        <h1 style="color: black;">Exposys Data Labs</h1>
+        <div class="file">
+            <span>Mass Mail Dispatcher</span>
+            <P>Upload CSV File:</P>
+            <input type="file" id="upload" accept="text/csv">
+        </div>
+        <div class="mail-info">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h2>Write Your Mail Here</h2>
+                <input type="email" id="from" placeholder="From (Email Id)" required><br>
+                <input type="text" id="subject" placeholder="Subject" required><br>
+                <!-- <input type="msg" id="from" placeholder="From (Email Id)" required> -->
+                <textarea id="msg" cols="12" rows="12" placeholder="Body" required></textarea> <br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+   </div>
+   <!-- creating tables -->
+   
+   <div class="tables">
+    <div class="valTab">
+        <table id="val">
+            <tr>
+                <td>
+                    <h2>Valid Emails: <span id="valCount"></span></h2>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="invalTab">
+        <table id="inval">
+            <tr>
+                <td>
+                    <h2>Invalid Emails: <span id="invalCount"></span></h2>
+                </td>
+            </tr>
+        </table>
+    </div>
+   </div>
+   
+   
+   <script src="https://smtpjs.com/v3/smtp.js"> </script>
+   <script src="main.js"></script> 
+</body>
+</html>
